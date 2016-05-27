@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Are we e10s yet?</title>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+  <body>
+    <div class="container">
+    		<div class="callout">
+    			<h1>Are we e10s yet?</h1>
+    		</div>
+        <p>To test an add-on:</p>
+        <ol>
+            <li>Confirm that the add-on works as expected in Firefox's Release channel <i>before</i> testing Nightly. :)</li>
+            <li><a href="https://nightly.mozilla.org/">Install Firefox Nightly</a>.</li>
+            <li>Install the add-on you would like to test.</li>
+            <li>e10s is enabled by default in Firefox Nightly, but disabled in Firefox's other release channels: Developer Edition, Beta, and Release. When e10s is enabled, Firefox's tab tool tip is suffixed with "- e10s".</li>
+            <li>Confirm that the add-on still works as expected with e10s in the Nightly channel.</li>
+        </ol>
+        <p><b>If the add-on works as expected,</b> click the add-on's "it works" link to tell Mozilla!</p>
+        <p><b>If the add-on does not work as expected with e10s,</b> click the add-on's "Report bug" link. Please include a description of what you <i>expected</i> to happen, what actually happened, and steps to reproduce the problem.</p>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Compatible?</th>
+              <th>Shimmed</th>
+              <th>Bugs</th>
+              <th>Testing</th>
+           </tr>
+         </thead>
+         <tbody>
+        {% for addon in addons %}
+          <tr>
+            <td><a class="anchor" href="#{{ addon.number }}">#</a> <a id="{{ addon.number }}" href="{{ addon.url }}">{{ addon.name }}</a><div class="addon-guid">{{ addon.guid }} &bull; {{ '{0:,}'.format(addon.users) }} users</div></td>
+            <td class="label-wrapper"><span class="label label-{% if addon.status == 'compatible' %}success{% else %}info{% endif %}">{{ addon.status }}</span></td>
+            <td class="label-wrapper"><span class="label label-{% if addon.shimmed %}warning{% elif addon.shimmed == False %}danger{% endif %}">{% if addon.shimmed %}Yes{% elif addon.shimmed == False %}No{% endif %}</span></td>
+            <td class="label-wrapper">{% for bug in addon.bugs %}<span class="label label-{% if bug.state == 'RESOLVED' %}success{% elif bug.state == 'REOPENED' %}warning{% elif bug.state == 'NEW' %}danger{% endif %}"><a href="{{ bug.url }}" title="Bug: {{ bug.state }}">{{ bug.id }}</a></span>{% endfor %}</td>
+            <td>...</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  </body>
+</html>

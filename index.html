@@ -1,0 +1,847 @@
+<html>
+<head>
+    <title>Are we e10s yet?</title>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+  <body>
+    <div class="container">
+    		<div class="callout">
+    			<h1>Are we e10s yet?</h1>
+    		</div>
+        <p>To test an add-on:</p>
+        <ol>
+            <li>Confirm that the add-on works as expected in Firefox's Release channel <i>before</i> testing Nightly. :)</li>
+            <li><a href="https://nightly.mozilla.org/">Install Firefox Nightly</a>.</li>
+            <li>Install the add-on you would like to test.</li>
+            <li>e10s is enabled by default in Firefox Nightly, but disabled in Firefox's other release channels: Developer Edition, Beta, and Release. When e10s is enabled, Firefox's tab tool tip is suffixed with "- e10s".</li>
+            <li>Confirm that the add-on still works as expected with e10s in the Nightly channel.</li>
+        </ol>
+        <p><b>If the add-on works as expected,</b> click the add-on's "it works" link to tell Mozilla!</p>
+        <p><b>If the add-on does not work as expected with e10s,</b> click the add-on's "Report bug" link. Please include a description of what you <i>expected</i> to happen, what actually happened, and steps to reproduce the problem.</p>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Compatible?</th>
+              <th>Shimmed</th>
+              <th>Bugs</th>
+              <th>Testing</th>
+           </tr>
+         </thead>
+         <tbody>
+        
+          <tr>
+            <td><a class="anchor" href="#0">#</a> <a id="0" href="https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/">Adblock Plus</a><div class="addon-guid">{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d} &bull; 20,619,547 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-warning"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=930788" title="Bug: REOPENED">930788</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#1">#</a> <a id="1" href="https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/">Video DownloadHelper</a><div class="addon-guid">{b9db16a4-6edc-47ec-a1f4-b86292ed211d} &bull; 4,452,660 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1047248" title="Bug: RESOLVED">1047248</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#2">#</a> <a id="2" href="https://addons.mozilla.org/en-US/firefox/addon/firebug/">Firebug</a><div class="addon-guid">firebug@software.joehewitt.com &bull; 2,166,503 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#3">#</a> <a id="3" href="">Unknown</a><div class="addon-guid">{20a82645-c095-46ed-80e3-08825760534b} &bull; 2,409,532 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1058542" title="Bug: NEW">1058542</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#4">#</a> <a id="4" href="https://addons.mozilla.org/en-US/firefox/addon/noscript/">NoScript Security Suite</a><div class="addon-guid">{73a6fe31-595d-460b-a920-fcc0f8843232} &bull; 2,146,154 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1188835" title="Bug: NEW">1188835</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#5">#</a> <a id="5" href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/">DownThemAll!</a><div class="addon-guid">{DDC359D1-844A-42a7-9AA1-88A850A938A8} &bull; 1,294,978 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1101189" title="Bug: NEW">1101189</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#6">#</a> <a id="6" href="https://addons.mozilla.org/en-US/firefox/addon/ghostery/">Ghostery</a><div class="addon-guid">firefox@ghostery.com &bull; 1,464,992 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1048164" title="Bug: RESOLVED">1048164</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#7">#</a> <a id="7" href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a><div class="addon-guid">{e4a8a97b-f2ed-450b-b12d-ee082ba24781} &bull; 1,302,204 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1186548" title="Bug: NEW">1186548</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#8">#</a> <a id="8" href="https://addons.mozilla.org/en-US/firefox/addon/adblock-plus-pop-up-addon/">Adblock Plus Pop-up Addon</a><div class="addon-guid">adblockpopups@jessehakanen.net &bull; 1,127,969 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-warning"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=946594" title="Bug: REOPENED">946594</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#9">#</a> <a id="9" href="https://addons.mozilla.org/en-US/firefox/addon/flash-video-downloader/">Flash Video Downloader - YouTube HD Download [4K]</a><div class="addon-guid">artur.dubovoy@gmail.com &bull; 1,066,245 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1102532" title="Bug: NEW">1102532</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#10">#</a> <a id="10" href="https://addons.mozilla.org/en-US/firefox/addon/wot-safe-browsing-tool/">Web of Trust, WOT: Website Reputation Ratings</a><div class="addon-guid">{a0d7ccb3-214d-498b-b4aa-0e8fda9a7bf7} &bull; 937,486 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1161597" title="Bug: NEW">1161597</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#11">#</a> <a id="11" href="https://addons.mozilla.org/en-US/firefox/addon/flashgot/">FlashGot Mass Downloader</a><div class="addon-guid">{19503e42-ca3c-4c27-b1e2-9cdb2170ee34} &bull; 848,724 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1047669" title="Bug: RESOLVED">1047669</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#12">#</a> <a id="12" href="https://addons.mozilla.org/en-US/firefox/addon/download-youtube/">Download YouTube Videos as MP4</a><div class="addon-guid">{b9bfaf1c-a63f-47cd-8b9a-29526ced9060} &bull; 1,075,158 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=946905" title="Bug: RESOLVED">946905</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#13">#</a> <a id="13" href="https://addons.mozilla.org/en-US/firefox/addon/tab-mix-plus/">Tab Mix Plus</a><div class="addon-guid">{dc572301-7619-498c-a57d-39143191b318} &bull; 842,022 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#14">#</a> <a id="14" href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">uBlock Origin</a><div class="addon-guid">uBlock0@raymondhill.net &bull; 1,154,406 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1041071" title="Bug: RESOLVED">1041071</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#15">#</a> <a id="15" href="https://addons.mozilla.org/en-US/firefox/addon/elemhidehelper/">Element Hiding Helper for Adblock Plus</a><div class="addon-guid">elemhidehelper@adblockplus.org &bull; 655,424 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=946932" title="Bug: RESOLVED">946932</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#16">#</a> <a id="16" href="https://addons.mozilla.org/en-US/firefox/addon/flashblock/">Flashblock</a><div class="addon-guid">{3d7eb24f-2740-49df-8937-200b1cc08f8a} &bull; 595,268 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=999241" title="Bug: RESOLVED">999241</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#17">#</a> <a id="17" href="">Unknown</a><div class="addon-guid">testpilot@labs.mozilla.com &bull; 707,655 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1166434" title="Bug: NEW">1166434</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#18">#</a> <a id="18" href="https://addons.mozilla.org/en-US/firefox/addon/google-translator-for-firefox/">Google Translator for Firefox</a><div class="addon-guid">translator@zoli.bod &bull; 798,165 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#19">#</a> <a id="19" href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a><div class="addon-guid">{46551EC9-40F0-4e47-8E18-8E5CF550CFB8} &bull; 481,414 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1047422" title="Bug: RESOLVED">1047422</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#20">#</a> <a id="20" href="https://addons.mozilla.org/en-US/firefox/addon/1-click-youtube-video-downl/">1-Click YouTube Video Download</a><div class="addon-guid">YoutubeDownloader@PeterOlayev.com &bull; 694,409 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1177092" title="Bug: NEW">1177092</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#21">#</a> <a id="21" href="https://addons.mozilla.org/en-US/firefox/addon/download-flash-and-video/">Download Flash and Video</a><div class="addon-guid">{bee6eb20-01e0-ebd1-da83-080329fb9a3a} &bull; 682,182 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1188837" title="Bug: RESOLVED">1188837</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#22">#</a> <a id="22" href="https://addons.mozilla.org/en-US/firefox/addon/flagfox/">Flagfox</a><div class="addon-guid">{1018e4d6-728f-4b20-ad56-37578a4de76b} &bull; 525,145 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#23">#</a> <a id="23" href="https://addons.mozilla.org/en-US/firefox/addon/youtube-video-and-audio-dow/">YouTube Video and Audio Downloader</a><div class="addon-guid">feca4b87-3be4-43da-a1b1-137c24220968@jetpack &bull; 727,036 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#24">#</a> <a id="24" href="https://addons.mozilla.org/en-US/firefox/addon/youtube-mp3/">YouTube mp3</a><div class="addon-guid">info@youtube-mp3.org &bull; 514,302 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#25">#</a> <a id="25" href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/">Web Developer</a><div class="addon-guid">{c45c406e-ab73-11d8-be73-000a95be3b12} &bull; 493,583 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#26">#</a> <a id="26" href="https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/">BetterPrivacy-signed</a><div class="addon-guid">{d40f5e7b-d2cf-4856-b441-cc613eeffbe3} &bull; 480,695 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#27">#</a> <a id="27" href="https://addons.mozilla.org/en-US/firefox/addon/fireftp/">FireFTP</a><div class="addon-guid">{a7c6cf7f-112c-4500-a7ea-39801a327e5f} &bull; 490,402 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#28">#</a> <a id="28" href="">Unknown</a><div class="addon-guid">{D4DD63FA-01E4-46a7-B6B1-EDAB7D6AD389} &bull; 331,909 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#29">#</a> <a id="29" href="https://addons.mozilla.org/en-US/firefox/addon/ie-tab-2-ff-36/">IE Tab V2  (Enhanced IE Tab)</a><div class="addon-guid">{1BC9BA34-1EED-42ca-A505-6D2F1A935BBB} &bull; 515,934 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#30">#</a> <a id="30" href="https://addons.mozilla.org/en-US/firefox/addon/anonymox/">anonymoX</a><div class="addon-guid">client@anonymox.net &bull; 549,250 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1048057" title="Bug: VERIFIED">1048057</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#31">#</a> <a id="31" href="">Unknown</a><div class="addon-guid">{fe272bd1-5f76-4ea4-8501-a05d35d823fc} &bull; 497,253 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1147327" title="Bug: NEW">1147327</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#32">#</a> <a id="32" href="https://addons.mozilla.org/en-US/firefox/addon/imacros-for-firefox/">iMacros for Firefox</a><div class="addon-guid">{81BF1D23-5F17-408D-AC6B-BD6DF7CAF670} &bull; 397,613 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1074463" title="Bug: RESOLVED">1074463</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#33">#</a> <a id="33" href="https://addons.mozilla.org/en-US/firefox/addon/epubreader/">EPUBReader</a><div class="addon-guid">{5384767E-00D9-40E9-B72F-9CC39D655D6F} &bull; 424,322 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#34">#</a> <a id="34" href="https://addons.mozilla.org/en-US/firefox/addon/personas-plus/">Personas Plus</a><div class="addon-guid">personas@christopher.beard &bull; 312,913 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1075613" title="Bug: RESOLVED">1075613</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#35">#</a> <a id="35" href="https://addons.mozilla.org/en-US/firefox/addon/speed-dial/">Speed Dial</a><div class="addon-guid">{64161300-e22b-11db-8314-0800200c9a66} &bull; 378,805 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#36">#</a> <a id="36" href="https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer/">Classic Theme Restorer</a><div class="addon-guid">ClassicThemeRestorer@ArisT2Noia4dev &bull; 436,611 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1053007" title="Bug: RESOLVED">1053007</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#37">#</a> <a id="37" href="https://addons.mozilla.org/en-US/firefox/addon/lightbeam/">Lightbeam for Firefox</a><div class="addon-guid">jid1-F9UJ2thwoAm5gQ@jetpack &bull; 509,680 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1177151" title="Bug: NEW">1177151</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#38">#</a> <a id="38" href="https://addons.mozilla.org/en-US/firefox/addon/video-downloader-player/">Ant Video Downloader</a><div class="addon-guid">anttoolbar@ant.com &bull; 407,227 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1106708" title="Bug: NEW">1106708</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#39">#</a> <a id="39" href="https://addons.mozilla.org/en-US/firefox/addon/evernote-web-clipper/">Evernote Web Clipper</a><div class="addon-guid">{E0B8C461-F8FB-49b4-8373-FE32E9252800} &bull; 391,479 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1100312" title="Bug: VERIFIED">1100312</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#40">#</a> <a id="40" href="https://addons.mozilla.org/en-US/firefox/addon/firegestures/">FireGestures</a><div class="addon-guid">firegestures@xuldev.org &bull; 363,752 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#41">#</a> <a id="41" href="">Unknown</a><div class="addon-guid">firefoxdav@icloud.com &bull; 383,932 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#42">#</a> <a id="42" href="https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher/">User Agent Switcher</a><div class="addon-guid">{e968fc70-8f95-4ab9-9e79-304de2a71ee1} &bull; 343,383 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#43">#</a> <a id="43" href="https://addons.mozilla.org/en-US/firefox/addon/easy-youtube-video-download/">Easy Youtube Video Downloader Express</a><div class="addon-guid">{b9acf540-acba-11e1-8ccb-001fd0e08bd4} &bull; 326,119 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#44">#</a> <a id="44" href="https://addons.mozilla.org/en-US/firefox/addon/garmin-communicator/">Garmin Communicator</a><div class="addon-guid">{195A3098-0BD5-4e90-AE22-BA1C540AFD1E} &bull; 418,313 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1138107" title="Bug: RESOLVED">1138107</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#45">#</a> <a id="45" href="https://addons.mozilla.org/en-US/firefox/addon/imtranslator/">Google Translate, ImTranslator, Dictionary, TTS</a><div class="addon-guid">{9AA46F4F-4DC7-4c06-97AF-5035170634FE} &bull; 336,652 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#46">#</a> <a id="46" href="https://addons.mozilla.org/en-US/firefox/addon/xmarks-sync/">Xmarks Sync</a><div class="addon-guid">foxmarks@kei.com &bull; 337,623 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1177475" title="Bug: NEW">1177475</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#47">#</a> <a id="47" href="https://addons.mozilla.org/en-US/firefox/addon/donottrackplus/">Blur</a><div class="addon-guid">donottrackplus@abine.com &bull; 203,758 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1043297" title="Bug: RESOLVED">1043297</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#48">#</a> <a id="48" href="https://addons.mozilla.org/en-US/firefox/addon/nosquint/">NoSquint</a><div class="addon-guid">nosquint@urandom.ca &bull; 235,608 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1008768" title="Bug: NEW">1008768</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#49">#</a> <a id="49" href="https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/">LastPass Password Manager</a><div class="addon-guid">support@lastpass.com &bull; 745,753 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1106486" title="Bug: RESOLVED">1106486</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#50">#</a> <a id="50" href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/">FoxyProxy Standard</a><div class="addon-guid">foxyproxy@eric.h.jung &bull; 286,381 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#51">#</a> <a id="51" href="https://addons.mozilla.org/en-US/firefox/addon/proxtube/">ProxTube - Unblock YouTube</a><div class="addon-guid">ich@maltegoetz.de &bull; 311,056 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#52">#</a> <a id="52" href="https://addons.mozilla.org/en-US/firefox/addon/modify-headers/">Modify Headers</a><div class="addon-guid">{b749fc7c-e949-447f-926c-3f4eed6accfe} &bull; 116,430 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#53">#</a> <a id="53" href="https://addons.mozilla.org/en-US/firefox/addon/youtube-flash-player/">YouTube Flash Player</a><div class="addon-guid">jid1-HAV2inXAnQPIeA@jetpack &bull; 402,546 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#54">#</a> <a id="54" href="https://addons.mozilla.org/en-US/firefox/addon/ie-tab/">IE Tab</a><div class="addon-guid">{77b819fa-95ad-4f2c-ac7c-486b356188a9} &bull; 204,934 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#55">#</a> <a id="55" href="https://addons.mozilla.org/en-US/firefox/addon/netvideohunter-video-downloade/">NetVideoHunter</a><div class="addon-guid">netvideohunter@netvideohunter.com &bull; 278,207 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1138111" title="Bug: NEW">1138111</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#56">#</a> <a id="56" href="https://addons.mozilla.org/en-US/firefox/addon/youtube-high-definition/">YouTube High Definition</a><div class="addon-guid">{7b1bf0b6-a1b9-42b0-b75d-252036438bdc} &bull; 284,115 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1003653" title="Bug: VERIFIED">1003653</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#57">#</a> <a id="57" href="https://addons.mozilla.org/en-US/firefox/addon/provider-for-google-calendar/">Provider for Google Calendar</a><div class="addon-guid">{a62ef8ec-5fdc-40c2-873c-223b8a6925cc} &bull; 338,360 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#58">#</a> <a id="58" href="https://addons.mozilla.org/en-US/firefox/addon/session-manager/">Session Manager</a><div class="addon-guid">{1280606b-2510-4fe0-97ef-9b5a22eafe30} &bull; 288,482 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1047797" title="Bug: UNCONFIRMED">1047797</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#59">#</a> <a id="59" href="https://addons.mozilla.org/en-US/firefox/addon/quickjava/">QuickJava</a><div class="addon-guid">{E6C1199F-E687-42da-8C24-E7770CC3AE66} &bull; 274,114 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#60">#</a> <a id="60" href="https://addons.mozilla.org/en-US/firefox/addon/colorzilla/">ColorZilla</a><div class="addon-guid">{6AC85730-7D0F-4de0-B3FA-21142DD85326} &bull; 273,013 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1114953" title="Bug: RESOLVED">1114953</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#61">#</a> <a id="61" href="https://addons.mozilla.org/en-US/firefox/addon/fireshot/">Full Web Page Screenshots (♥♥♥♥♥)</a><div class="addon-guid">{0b457cAA-602d-484a-8fe7-c1d894a011ba} &bull; 279,529 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#62">#</a> <a id="62" href="https://addons.mozilla.org/en-US/firefox/addon/vkontakteru-downloader/">VKontakte.ru Downloader (music/videos/photos @ VK)</a><div class="addon-guid">vk@sergeykolosov.mp &bull; 275,379 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#63">#</a> <a id="63" href="">Unknown</a><div class="addon-guid">{5C655500-E712-41e7-9349-CE462F844B19} &bull; 94,055 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1037193" title="Bug: RESOLVED">1037193</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#64">#</a> <a id="64" href="https://addons.mozilla.org/en-US/firefox/addon/download-status-bar/">Download Status Bar</a><div class="addon-guid">{6c28e999-e900-4635-a39d-b1ec90ba0c0f} &bull; 240,495 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#65">#</a> <a id="65" href="">Unknown</a><div class="addon-guid">youtubeunblocker@unblocker.yt &bull; 90,315 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1251911" title="Bug: RESOLVED">1251911</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#66">#</a> <a id="66" href="">Unknown</a><div class="addon-guid">isreaditlater@ideashower.com &bull; 115,910 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#67">#</a> <a id="67" href="https://addons.mozilla.org/en-US/firefox/addon/disconnect/">Disconnect</a><div class="addon-guid">2.0@disconnect.me &bull; 283,780 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1066217" title="Bug: RESOLVED">1066217</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#68">#</a> <a id="68" href="https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/">Reddit Enhancement Suite</a><div class="addon-guid">jid1-xUfzOsOFlzSOXg@jetpack &bull; 248,996 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1046044" title="Bug: RESOLVED">1046044</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#69">#</a> <a id="69" href="https://addons.mozilla.org/en-US/firefox/addon/minimizetotray-revived/">MinimizeToTray revived</a><div class="addon-guid">mintrayr@tn123.ath.cx &bull; 229,910 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#70">#</a> <a id="70" href="https://addons.mozilla.org/en-US/firefox/addon/colorfultabs/">ColorfulTabs</a><div class="addon-guid">{0545b830-f0aa-4d7e-8820-50a4629a56fe} &bull; 250,595 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1114950" title="Bug: RESOLVED">1114950</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#71">#</a> <a id="71" href="https://addons.mozilla.org/en-US/firefox/addon/youtube-flash-video-player/">YouTube Flash Video Player</a><div class="addon-guid">{f3bd3dd2-2888-44c5-91a2-2caeb33fb898} &bull; 299,809 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#72">#</a> <a id="72" href="https://addons.mozilla.org/en-US/firefox/addon/all-in-one-sidebar/">All-in-One Sidebar</a><div class="addon-guid">{097d3191-e6fa-4728-9826-b533d755359d} &bull; 189,259 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1059157" title="Bug: RESOLVED">1059157</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#73">#</a> <a id="73" href="https://addons.mozilla.org/en-US/firefox/addon/quick-locale-switcher/">Quick Locale Switcher</a><div class="addon-guid">{25A1388B-6B18-46c3-BEBA-A81915D0DE8F} &bull; 149,681 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#74">#</a> <a id="74" href="https://addons.mozilla.org/en-US/firefox/addon/s3google-translator/">S3.Google Translator</a><div class="addon-guid">s3google@translator &bull; 369,330 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#75">#</a> <a id="75" href="https://addons.mozilla.org/en-US/firefox/addon/public-fox/">Public Fox</a><div class="addon-guid">{9AA46F4F-4DC7-4c06-97AF-6665170634FE} &bull; 201,718 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#76">#</a> <a id="76" href="https://addons.mozilla.org/en-US/firefox/addon/blocksite/">BlockSite</a><div class="addon-guid">{dd3d7613-0246-469d-bc65-2a3cc1668adc} &bull; 201,017 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#77">#</a> <a id="77" href="https://addons.mozilla.org/en-US/firefox/addon/awesome-screenshot-capture-/">Awesome Screenshot Plus - Capture, Annotate & More</a><div class="addon-guid">jid0-GXjLLfbCoAx0LcltEdFrEkQdQPI@jetpack &bull; 198,208 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#78">#</a> <a id="78" href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/">SQLite Manager</a><div class="addon-guid">SQLiteManager@mrinalkant.blogspot.com &bull; 199,810 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#79">#</a> <a id="79" href="https://addons.mozilla.org/en-US/firefox/addon/righttoclick/">RightToClick</a><div class="addon-guid">{cd617375-6743-4ee8-bac4-fbf10f35729e} &bull; 167,915 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#80">#</a> <a id="80" href="https://addons.mozilla.org/en-US/firefox/addon/add-to-amazon-wish-list-button/">Amazon "Add to Wish List" Button</a><div class="addon-guid">amznUWL2@amazon.com &bull; 123,092 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1108725" title="Bug: NEW">1108725</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#81">#</a> <a id="81" href="">Unknown</a><div class="addon-guid">helper@savefrom.net &bull; 159,826 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#82">#</a> <a id="82" href="https://addons.mozilla.org/en-US/firefox/addon/lookout/">LookOut</a><div class="addon-guid">lookout@aron.rubin &bull; 210,662 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#83">#</a> <a id="83" href="https://addons.mozilla.org/en-US/firefox/addon/media-downloader/">Youtube Downloader 4K - Video Downloader</a><div class="addon-guid">paulsaintuzb@gmail.com &bull; 139,306 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#84">#</a> <a id="84" href="https://addons.mozilla.org/en-US/firefox/addon/mozilla-archive-format/">Mozilla Archive Format, with MHT and Faithful Save</a><div class="addon-guid">{7f57cf46-4467-4c2d-adfa-0cba7c507e54} &bull; 170,071 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1047789" title="Bug: RESOLVED">1047789</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#85">#</a> <a id="85" href="https://addons.mozilla.org/en-US/firefox/addon/reloadevery/">ReloadEvery</a><div class="addon-guid">{888d99e7-e8b5-46a3-851e-1ec45da1e644} &bull; 159,217 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#86">#</a> <a id="86" href="https://addons.mozilla.org/en-US/firefox/addon/extra-folder-columns/">Extra Folder Columns</a><div class="addon-guid">extra-cols@jminta_gmail.com &bull; 140,264 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#87">#</a> <a id="87" href="https://addons.mozilla.org/en-US/firefox/addon/firefox-hotfix/">Mozilla Firefox hotfix</a><div class="addon-guid">firefox-hotfix@mozilla.org &bull; 283,311 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#88">#</a> <a id="88" href="https://addons.mozilla.org/en-US/firefox/addon/password-exporter/">Password Exporter</a><div class="addon-guid">{B17C1C5A-04B1-11DB-9804-B622A1EF5492} &bull; 197,009 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#89">#</a> <a id="89" href="https://addons.mozilla.org/en-US/firefox/addon/live-http-headers/">Live HTTP Headers</a><div class="addon-guid">{8f8fe09b-0bd3-4470-bc1b-8cad42b8203a} &bull; 153,516 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#90">#</a> <a id="90" href="https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession/">Video Downloader professional</a><div class="addon-guid">ffext_basicvideoext@startpage24 &bull; 258,678 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#91">#</a> <a id="91" href="https://addons.mozilla.org/en-US/firefox/addon/image-zoom/">Image Zoom</a><div class="addon-guid">{1A2D0EC4-75F5-4c91-89C4-3656F6E44B68} &bull; 151,026 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-danger"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1121271" title="Bug: NEW">1121271</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#92">#</a> <a id="92" href="https://addons.mozilla.org/en-US/firefox/addon/xthunder/">xThunder</a><div class="addon-guid">xthunder@lshai.com &bull; 192,558 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#93">#</a> <a id="93" href="https://addons.mozilla.org/en-US/firefox/addon/text-link/">Text Link</a><div class="addon-guid">{54BB9F3F-07E5-486c-9B39-C7398B99391C} &bull; 138,952 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1106535" title="Bug: RESOLVED">1106535</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#94">#</a> <a id="94" href="https://addons.mozilla.org/en-US/firefox/addon/tab-scope/">Tab Scope</a><div class="addon-guid">tabscope@xuldev.org &bull; 137,334 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1037197" title="Bug: RESOLVED">1037197</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#95">#</a> <a id="95" href="">Unknown</a><div class="addon-guid">printPages2Pdf@reinhold.ripper &bull; 116,414 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#96">#</a> <a id="96" href="https://addons.mozilla.org/en-US/firefox/addon/scrapbook/">ScrapBook</a><div class="addon-guid">{53A03D43-5363-4669-8190-99061B2DEBA5} &bull; 156,541 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1046426" title="Bug: RESOLVED">1046426</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#97">#</a> <a id="97" href="">Unknown</a><div class="addon-guid">smarterwiki@wikiatic.com &bull; 90,042 users</div></td>
+            <td class="label-wrapper"><span class="label label-info">unknown</span></td>
+            <td class="label-wrapper"><span class="label label-danger">No</span></td>
+            <td class="label-wrapper"><span class="label label-"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213112" title="Bug: UNCONFIRMED">1213112</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#98">#</a> <a id="98" href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/">DuckDuckGo Plus</a><div class="addon-guid">jid1-ZAdIEUB7XOzOJw@jetpack &bull; 125,562 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#99">#</a> <a id="99" href="https://addons.mozilla.org/en-US/firefox/addon/fvd-speed-dial/">Speed Dial [FVD] - New Tab Page, Sync...</a><div class="addon-guid">pavel.sherbakov@gmail.com &bull; 170,148 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-warning">Yes</span></td>
+            <td class="label-wrapper"><span class="label label-success"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1058525" title="Bug: RESOLVED">1058525</a></span></td>
+            <td>...</td>
+          </tr>
+        
+          <tr>
+            <td><a class="anchor" href="#100">#</a> <a id="100" href="https://addons.mozilla.org/en-US/firefox/addon/forecastfox-weather/">Forecastfox Weather</a><div class="addon-guid">{0538E3E3-7E9B-4d49-8831-A227C80A7AD3} &bull; 93,052 users</div></td>
+            <td class="label-wrapper"><span class="label label-success">compatible</span></td>
+            <td class="label-wrapper"><span class="label label-"></span></td>
+            <td class="label-wrapper"></td>
+            <td>...</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  </body>
+</html>
