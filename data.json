@@ -1,226 +1,199 @@
 [
   {
-
     "guid": "{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}",
+    "testing": [],
+    "bugs": [],
+    "users": 20619547
+  },
+  {
+    "guid": "{b9db16a4-6edc-47ec-a1f4-b86292ed211d}",
     "testing": [],
     "bugs": [
       "930788"
     ],
-    "users": 20619547
+    "users": 4452660
   },
   {
-
-    "guid": "{b9db16a4-6edc-47ec-a1f4-b86292ed211d}",
+    "guid": "firebug@software.joehewitt.com",
     "testing": [],
     "bugs": [
       "1047248"
     ],
-    "users": 4452660
-  },
-  {
-
-    "guid": "firebug@software.joehewitt.com",
-    "testing": [],
-    "bugs": [],
     "users": 2166503
   },
   {
-
     "guid": "{20a82645-c095-46ed-80e3-08825760534b}",
+    "testing": [],
+    "bugs": [],
+    "users": 2409532
+  },
+  {
+    "guid": "{73a6fe31-595d-460b-a920-fcc0f8843232}",
     "testing": [],
     "bugs": [
       "1058542"
     ],
-    "users": 2409532
+    "users": 2146154
   },
   {
-
-    "guid": "{73a6fe31-595d-460b-a920-fcc0f8843232}",
+    "guid": "{DDC359D1-844A-42a7-9AA1-88A850A938A8}",
     "testing": [],
     "bugs": [
       "1188835"
     ],
-    "users": 2146154
+    "users": 1294978
   },
   {
-
-    "guid": "{DDC359D1-844A-42a7-9AA1-88A850A938A8}",
+    "guid": "firefox@ghostery.com",
     "testing": [],
     "bugs": [
       "1101189"
     ],
-    "users": 1294978
+    "users": 1464992
   },
   {
-
-    "guid": "firefox@ghostery.com",
+    "guid": "{e4a8a97b-f2ed-450b-b12d-ee082ba24781}",
     "testing": [],
     "bugs": [
       "1048164"
     ],
-    "users": 1464992
+    "users": 1302204
   },
   {
-
-    "guid": "{e4a8a97b-f2ed-450b-b12d-ee082ba24781}",
+    "guid": "adblockpopups@jessehakanen.net",
     "testing": [],
     "bugs": [
       "1186548"
     ],
-    "users": 1302204
-  },
-  {
-
-    "guid": "adblockpopups@jessehakanen.net",
-    "testing": [],
-    "bugs": [
-      "946594"
-    ], 
     "users": 1127969
   },
   {
-
     "guid": "artur.dubovoy@gmail.com",
     "testing": [],
     "bugs": [
-      "1102532"
+      "946594"
     ],
     "users": 1066245
   },
   {
-
     "guid": "{a0d7ccb3-214d-498b-b4aa-0e8fda9a7bf7}",
     "testing": [],
     "bugs": [
-      "1161597"
+      "1102532"
     ],
     "users": 937486
   },
   {
-
     "guid": "{19503e42-ca3c-4c27-b1e2-9cdb2170ee34}",
     "testing": [],
     "bugs": [
-      "1047669"
+      "1161597"
     ],
     "users": 848724
   },
   {
-
     "guid": "{b9bfaf1c-a63f-47cd-8b9a-29526ced9060}",
     "testing": [],
     "bugs": [
-      "946905"
+      "1047669"
     ],
     "users": 1075158
   },
   {
-
     "guid": "{dc572301-7619-498c-a57d-39143191b318}",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+      "946905"
+    ],
     "users": 842022
   },
   {
-
     "guid": "uBlock0@raymondhill.net",
+    "testing": [],
+    "bugs": [],
+    "users": 1154406
+  },
+  {
+    "guid": "elemhidehelper@adblockplus.org",
     "testing": [],
     "bugs": [
       "1041071"
     ],
-    "users": 1154406
+    "users": 655424
   },
   {
-
-    "guid": "elemhidehelper@adblockplus.org",
+    "guid": "{3d7eb24f-2740-49df-8937-200b1cc08f8a}",
     "testing": [],
     "bugs": [
       "946932"
     ],
-    "users": 655424
+    "users": 595268
   },
   {
-
-    "guid": "{3d7eb24f-2740-49df-8937-200b1cc08f8a}",
+    "guid": "testpilot@labs.mozilla.com",
     "testing": [],
     "bugs": [
       "999241"
     ],
-    "users": 595268
+    "users": 707655
   },
   {
-
-    "guid": "testpilot@labs.mozilla.com",
+    "guid": "translator@zoli.bod",
     "testing": [],
     "bugs": [
       "1166434"
     ],
-    "users": 707655
-  },
-  {
-
-    "guid": "translator@zoli.bod",
-    "testing": [],
-    "bugs": [],
     "users": 798165
   },
   {
-
     "guid": "{46551EC9-40F0-4e47-8E18-8E5CF550CFB8}",
+    "testing": [],
+    "bugs": [],
+    "users": 481414
+  },
+  {
+    "guid": "YoutubeDownloader@PeterOlayev.com",
     "testing": [],
     "bugs": [
       "1047422"
     ],
-    "users": 481414
+    "users": 694409
   },
   {
-
-    "guid": "YoutubeDownloader@PeterOlayev.com",
+    "guid": "{bee6eb20-01e0-ebd1-da83-080329fb9a3a}",
     "testing": [],
     "bugs": [
       "1177092"
     ],
-    "users": 694409
+    "users": 682182
   },
   {
-
-    "guid": "{bee6eb20-01e0-ebd1-da83-080329fb9a3a}",
+    "guid": "{1018e4d6-728f-4b20-ad56-37578a4de76b}",
     "testing": [],
     "bugs": [
       "1188837"
     ],
-    "users": 682182
-  },
-  {
-
-    "guid": "{1018e4d6-728f-4b20-ad56-37578a4de76b}",
-    "testing": [],
-    "bugs": [],
     "users": 525145
   },
   {
-
     "guid": "feca4b87-3be4-43da-a1b1-137c24220968@jetpack",
     "testing": [],
     "bugs": [],
     "users": 727036
   },
   {
-
     "guid": "info@youtube-mp3.org",
     "testing": [],
     "bugs": [],
     "users": 514302
   },
   {
-
     "guid": "{c45c406e-ab73-11d8-be73-000a95be3b12}",
     "testing": [],
     "bugs": [],
     "users": 493583
   },
   {
-
     "guid": "{d40f5e7b-d2cf-4856-b441-cc613eeffbe3}",
     "testing": [],
     "bugs": [],
@@ -234,102 +207,88 @@
     "users": 490402
   },
   {
-
     "guid": "{D4DD63FA-01E4-46a7-B6B1-EDAB7D6AD389}",
     "testing": [],
     "bugs": [],
     "users": 331909
   },
   {
-
     "guid": "{1BC9BA34-1EED-42ca-A505-6D2F1A935BBB}",
     "testing": [],
     "bugs": [],
     "users": 515934
   },
   {
-
     "guid": "client@anonymox.net",
+    "testing": [],
+    "bugs": [],
+    "users": 549250
+  },
+  {
+    "guid": "{fe272bd1-5f76-4ea4-8501-a05d35d823fc}",
     "testing": [],
     "bugs": [
       "1048057"
     ],
-    "users": 549250
+    "users": 497253
   },
   {
-
-    "guid": "{fe272bd1-5f76-4ea4-8501-a05d35d823fc}",
+    "guid": "{81BF1D23-5F17-408D-AC6B-BD6DF7CAF670}",
     "testing": [],
     "bugs": [
       "1147327"
     ],
-    "users": 497253
+    "users": 397613
   },
   {
-
-    "guid": "{81BF1D23-5F17-408D-AC6B-BD6DF7CAF670}",
+    "guid": "{5384767E-00D9-40E9-B72F-9CC39D655D6F}",
     "testing": [],
     "bugs": [
       "1074463"
     ],
-    "users": 397613
-  },
-  {
-
-    "guid": "{5384767E-00D9-40E9-B72F-9CC39D655D6F}",
-    "testing": [],
-    "bugs": [],
     "users": 424322
   },
   {
-
     "guid": "personas@christopher.beard",
+    "testing": [],
+    "bugs": [],
+    "users": 312913
+  },
+  {
+    "guid": "{64161300-e22b-11db-8314-0800200c9a66}",
     "testing": [],
     "bugs": [
       "1075613"
     ],
-    "users": 312913
-  },
-  {
-
-    "guid": "{64161300-e22b-11db-8314-0800200c9a66}",
-    "testing": [],
-    "bugs": [],
     "users": 378805
   },
   {
-
     "guid": "ClassicThemeRestorer@ArisT2Noia4dev",
+    "testing": [],
+    "bugs": [],
+    "users": 436611
+  },
+  {
+    "guid": "jid1-F9UJ2thwoAm5gQ@jetpack",
     "testing": [],
     "bugs": [
       "1053007"
     ],
-    "users": 436611
+    "users": 509680
   },
   {
-
-    "guid": "jid1-F9UJ2thwoAm5gQ@jetpack",
+    "guid": "anttoolbar@ant.com",
     "testing": [],
     "bugs": [
       "1177151"
     ],
-    "users": 509680
-  },
-  {
-
-    "guid": "anttoolbar@ant.com",
-    "testing": [],
-    "bugs": [
-      "1106708"
-    ],
     "users": 407227
   },
   {
-
     "guid": "{E0B8C461-F8FB-49b4-8373-FE32E9252800}",
     "testing": [],
     "bugs": [
-      "1100312"
+      "1106708"
     ],
     "users": 391479
   },
@@ -337,91 +296,82 @@
     "shimmed": null,
     "guid": "firegestures@xuldev.org",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+      "1100312"
+    ],
     "users": 363752
   },
   {
-
     "guid": "firefoxdav@icloud.com",
     "testing": [],
     "bugs": [],
     "users": 383932
   },
   {
-
     "guid": "{e968fc70-8f95-4ab9-9e79-304de2a71ee1}",
     "testing": [],
     "bugs": [],
     "users": 343383
   },
   {
-
     "guid": "{b9acf540-acba-11e1-8ccb-001fd0e08bd4}",
     "testing": [],
     "bugs": [],
     "users": 326119
   },
   {
-
     "guid": "{195A3098-0BD5-4e90-AE22-BA1C540AFD1E}",
+    "testing": [],
+    "bugs": [],
+    "users": 418313
+  },
+  {
+    "guid": "{9AA46F4F-4DC7-4c06-97AF-5035170634FE}",
     "testing": [],
     "bugs": [
       "1138107"
     ],
-    "users": 418313
-  },
-  {
-
-    "guid": "{9AA46F4F-4DC7-4c06-97AF-5035170634FE}",
-    "testing": [],
-    "bugs": [],
     "users": 336652
   },
   {
-
     "guid": "foxmarks@kei.com",
+    "testing": [],
+    "bugs": [],
+    "users": 337623
+  },
+  {
+    "guid": "donottrackplus@abine.com",
     "testing": [],
     "bugs": [
       "1177475"
     ],
-    "users": 337623
+    "users": 203758
   },
   {
-
-    "guid": "donottrackplus@abine.com",
+    "guid": "nosquint@urandom.ca",
     "testing": [],
     "bugs": [
       "1043297"
     ],
-    "users": 203758
+    "users": 235608
   },
   {
-
-    "guid": "nosquint@urandom.ca",
+    "guid": "support@lastpass.com",
     "testing": [],
     "bugs": [
       "1008768"
     ],
-    "users": 235608
+    "users": 745753
   },
   {
-
-    "guid": "support@lastpass.com",
+    "guid": "foxyproxy@eric.h.jung",
     "testing": [],
     "bugs": [
       "1106486"
     ],
-    "users": 745753
-  },
-  {
-
-    "guid": "foxyproxy@eric.h.jung",
-    "testing": [],
-    "bugs": [],
     "users": 286381
   },
   {
-
     "guid": "ich@maltegoetz.de",
     "testing": [],
     "bugs": [],
@@ -435,34 +385,28 @@
     "users": 116430
   },
   {
-
     "guid": "jid1-HAV2inXAnQPIeA@jetpack",
     "testing": [],
     "bugs": [],
     "users": 402546
   },
   {
-
     "guid": "{77b819fa-95ad-4f2c-ac7c-486b356188a9}",
     "testing": [],
     "bugs": [],
     "users": 204934
   },
   {
-
     "guid": "netvideohunter@netvideohunter.com",
     "testing": [],
-    "bugs": [
-      "1138111"
-    ],
+    "bugs": ["1138111"],
     "users": 278207
   },
   {
-
     "guid": "{7b1bf0b6-a1b9-42b0-b75d-252036438bdc}",
     "testing": [],
     "bugs": [
-      "1003653"
+
     ],
     "users": 284115
   },
@@ -470,43 +414,41 @@
     "shimmed": null,
     "guid": "{a62ef8ec-5fdc-40c2-873c-223b8a6925cc}",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+      "1003653"
+    ],
     "users": 338360
   },
   {
-
     "guid": "{1280606b-2510-4fe0-97ef-9b5a22eafe30}",
+    "testing": [],
+    "bugs": [],
+    "users": 288482
+  },
+  {
+    "guid": "{E6C1199F-E687-42da-8C24-E7770CC3AE66}",
     "testing": [],
     "bugs": [
       "1047797"
     ],
-    "users": 288482
-  },
-  {
-
-    "guid": "{E6C1199F-E687-42da-8C24-E7770CC3AE66}",
-    "testing": [],
-    "bugs": [],
     "users": 274114
   },
   {
     "shimmed": null,
     "guid": "{6AC85730-7D0F-4de0-B3FA-21142DD85326}",
     "testing": [],
-    "bugs": [
-      "1114953"
-    ],
+    "bugs": ["1114953"],
     "users": 273013
   },
   {
     "shimmed": null,
     "guid": "{0b457cAA-602d-484a-8fe7-c1d894a011ba}",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+    ],
     "users": 279529
   },
   {
-
     "guid": "vk@sergeykolosov.mp",
     "testing": [],
     "bugs": [],
@@ -516,93 +458,77 @@
     "shimmed": null,
     "guid": "{5C655500-E712-41e7-9349-CE462F844B19}",
     "testing": [],
-    "bugs": [
-      "1037193"
-    ],
+    "bugs": [],
     "users": 94055
   },
   {
-
     "guid": "{6c28e999-e900-4635-a39d-b1ec90ba0c0f}",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+    ],
     "users": 240495
   },
   {
-
     "guid": "youtubeunblocker@unblocker.yt",
     "testing": [],
-    "bugs": [
-      "1251911"
-    ],
+    "bugs": [],
     "users": 90315
   },
   {
-
     "guid": "isreaditlater@ideashower.com",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+    ],
     "users": 115910
   },
   {
-
     "guid": "2.0@disconnect.me",
     "testing": [],
-    "bugs": [
-      "1066217"
-    ],
+    "bugs": ["1066217"],
     "users": 283780
   },
   {
-
     "guid": "jid1-xUfzOsOFlzSOXg@jetpack",
     "testing": [],
     "bugs": [
-      "1046044"
+        "1046044"
     ],
     "users": 248996
   },
   {
-
     "guid": "mintrayr@tn123.ath.cx",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+    ],
     "users": 229910
   },
   {
-
     "guid": "{0545b830-f0aa-4d7e-8820-50a4629a56fe}",
     "testing": [],
-    "bugs": [
-      "1114950"
-    ],
+    "bugs": ["1114950"],
     "users": 250595
   },
   {
-
     "guid": "{f3bd3dd2-2888-44c5-91a2-2caeb33fb898}",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+    ],
     "users": 299809
   },
   {
-
     "guid": "{097d3191-e6fa-4728-9826-b533d755359d}",
     "testing": [],
-    "bugs": [
-      "1059157"
-    ],
+    "bugs": [],
     "users": 189259
   },
   {
-
     "guid": "{25A1388B-6B18-46c3-BEBA-A81915D0DE8F}",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+    ],
     "users": 149681
   },
   {
-
     "guid": "s3google@translator",
     "testing": [],
     "bugs": [],
@@ -616,28 +542,24 @@
     "users": 201718
   },
   {
-
     "guid": "{dd3d7613-0246-469d-bc65-2a3cc1668adc}",
     "testing": [],
     "bugs": [],
     "users": 201017
   },
   {
-
     "guid": "jid0-GXjLLfbCoAx0LcltEdFrEkQdQPI@jetpack",
     "testing": [],
     "bugs": [],
     "users": 198208
   },
   {
-
     "guid": "SQLiteManager@mrinalkant.blogspot.com",
     "testing": [],
     "bugs": [],
     "users": 199810
   },
   {
-
     "guid": "{cd617375-6743-4ee8-bac4-fbf10f35729e}",
     "testing": [],
     "bugs": [],
@@ -647,16 +569,15 @@
     "shimmed": null,
     "guid": "amznUWL2@amazon.com",
     "testing": [],
-    "bugs": [
-      "1108725"
-    ],
+    "bugs": [],
     "users": 123092
   },
   {
-
     "guid": "helper@savefrom.net",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+      "1108725"
+    ],
     "users": 159826
   },
   {
@@ -667,26 +588,23 @@
     "users": 210662
   },
   {
-
     "guid": "paulsaintuzb@gmail.com",
     "testing": [],
     "bugs": [],
     "users": 139306
   },
   {
-
     "guid": "{7f57cf46-4467-4c2d-adfa-0cba7c507e54}",
+    "testing": [],
+    "bugs": [],
+    "users": 170071
+  },
+  {
+    "guid": "{888d99e7-e8b5-46a3-851e-1ec45da1e644}",
     "testing": [],
     "bugs": [
       "1047789"
     ],
-    "users": 170071
-  },
-  {
-
-    "guid": "{888d99e7-e8b5-46a3-851e-1ec45da1e644}",
-    "testing": [],
-    "bugs": [],
     "users": 159217
   },
   {
@@ -704,106 +622,94 @@
     "users": 283311
   },
   {
-
     "guid": "{B17C1C5A-04B1-11DB-9804-B622A1EF5492}",
     "testing": [],
     "bugs": [],
     "users": 197009
   },
   {
-
     "guid": "{8f8fe09b-0bd3-4470-bc1b-8cad42b8203a}",
     "testing": [],
     "bugs": [],
     "users": 153516
   },
   {
-
     "guid": "ffext_basicvideoext@startpage24",
     "testing": [],
     "bugs": [],
     "users": 258678
   },
   {
-
     "guid": "{1A2D0EC4-75F5-4c91-89C4-3656F6E44B68}",
     "testing": [],
-    "bugs": [
-      "1121271"
-    ],
+    "bugs": ["1121271"],
     "users": 151026
   },
   {
-
     "guid": "xthunder@lshai.com",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+
+    ],
     "users": 192558
   },
   {
-
     "guid": "{54BB9F3F-07E5-486c-9B39-C7398B99391C}",
     "testing": [],
-    "bugs": [
-      "1106535"
-    ],
+    "bugs": ["1106535"],
     "users": 138952
   },
   {
-
     "guid": "tabscope@xuldev.org",
     "testing": [],
     "bugs": [
-      "1037197"
+        "1037197"
     ],
     "users": 137334
   },
   {
-
     "guid": "printPages2Pdf@reinhold.ripper",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+
+    ],
     "users": 116414
   },
   {
-
     "guid": "{53A03D43-5363-4669-8190-99061B2DEBA5}",
+    "testing": [],
+    "bugs": ["1058525"],
+    "users": 156541
+  },
+  {
+    "guid": "smarterwiki@wikiatic.com",
     "testing": [],
     "bugs": [
       "1046426"
     ],
-    "users": 156541
+    "users": 90042
   },
   {
-
-    "guid": "smarterwiki@wikiatic.com",
+    "guid": "jid1-ZAdIEUB7XOzOJw@jetpack",
     "testing": [],
     "bugs": [
       "1213112"
     ],
-    "users": 90042
-  },
-  {
-
-    "guid": "jid1-ZAdIEUB7XOzOJw@jetpack",
-    "testing": [],
-    "bugs": [],
     "users": 125562
   },
   {
-
     "guid": "pavel.sherbakov@gmail.com",
     "testing": [],
-    "bugs": [
-      "1058525"
-    ],
+    "bugs": ["1037197"],
     "users": 170148
   },
   {
     "shimmed": null,
     "guid": "{0538E3E3-7E9B-4d49-8831-A227C80A7AD3}",
     "testing": [],
-    "bugs": [],
+    "bugs": [
+
+    ],
     "users": 93052
   }
 ]

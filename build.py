@@ -48,25 +48,32 @@ def process_amo(result):
 
 
 def amo(guid):
-    url = amo_server + '/api/v3/addons/addon/{}/'.format(guid)
-    cached = get_cache(url)
-    if cached:
-        return process_amo(get_cache(url))
+    addon_url = amo_server + '/api/v3/addons/addon/{}/'.format(guid)
+    addon_data = get_cache(addon_url)
 
-    print 'Fetching', url
-    res = requests.get(url)
-    if res.status_code == 401:
-        return {
-            'name': 'Unknown',
-            'url': '',
-            'guid': guid,
-            'status': 'unknown'
-        }
+    compat_url = amo_server + '/api/v3/addons/addon/{}/feature_compatibility/'.format(guid)
+    compat_data = get_cache(compat_url)
+    if addon_data and compat_data:
+        return process_amo(addon_data, compat_data)
 
-    res.raise_for_status()
-    res_json = res.json()
-    set_cache(url, res_json)
-    return process_amo(res_json)
+    data = []
+    for url in (addon_url, compat_url):
+        print 'Fetching', url
+        res = requests.get(url)
+        if res.status_code == 401:
+            return {
+                'name': 'Error',
+                'url': '',
+                'guid': guid,
+                'status': 'error'
+            }
+
+        res.raise_for_status()
+        res_json = res.json()
+        set_cache(url, res_json)
+        data.append(res_json)
+
+    return process_amo(*data)
 
 
 def bugzilla(bugs):
