@@ -20,6 +20,12 @@ addon_perf = [
 ]
 
 
+fixups = {
+    'testpilot@labs.mozilla.com': 'Test Pilot (old one)',
+    '{20a82645-c095-46ed-80e3-08825760534b}': 'Microsoft .NET framework assistant',
+}
+
+
 def url_hash(url):
     hsh = hashlib.md5()
     hsh.update(url)
@@ -37,13 +43,13 @@ def get_cache(url):
         return json.load(open(filename, 'r'))
 
 
-def process_amo(result):
+def process_amo(result, compat):
     return {
         'name': result['name']['en-US'],
         'url': result['url'],
         'guid': result['guid'],
         # This doesn't exist yet.
-        'status': 'compatible'
+        'status': compat['e10s']
     }
 
 
@@ -62,7 +68,7 @@ def amo(guid):
         res = requests.get(url)
         if res.status_code == 401:
             return {
-                'name': 'Error',
+                'name': fixups.get(guid, 'Error fetching data from AMO'),
                 'url': '',
                 'guid': guid,
                 'status': 'error'

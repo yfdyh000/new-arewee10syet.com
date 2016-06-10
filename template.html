@@ -34,7 +34,7 @@
         {% for addon in addons %}
           <tr>
             <td><a class="anchor" href="#{{ addon.number }}">#</a> <a id="{{ addon.number }}" href="{{ addon.url }}">{{ addon.name }}</a><div class="addon-guid">{{ addon.guid }} &bull; {{ '{0:,}'.format(addon.users) }} users</div></td>
-            <td class="label-wrapper"><span class="label label-{% if addon.status == 'compatible' %}success{% else %}info{% endif %}">{{ addon.status }}</span></td>
+            <td class="label-wrapper"><span class="label label-{% if addon.status == 'compatible' %}success{% elif addon.status == 'error' %}warning{% else %}info{% endif %}">{{ addon.status }}</span></td>
             <td class="label-wrapper"><span class="label label-{% if addon.shim %}warning{% elif addon.shim == False %}danger{% endif %}">{% if addon.shim %}Yes{% elif addon.shim == False %}No{% endif %}</span></td>
             <td class="label-wrapper"><span class="label label-{% if addon.cpow %}warning{% else %}success{% endif %}">{{ '{0:,}'.format(addon.cpow) }}</span></td>
             <td class="label-wrapper">{% for bug in addon.bugs %}<span class="label label-{% if bug.state == 'RESOLVED' %}success{% elif bug.state == 'REOPENED' %}warning{% elif bug.state == 'NEW' %}danger{% endif %}"><a href="{{ bug.url }}" title="Bug: {{ bug.state }}">{{ bug.id }}</a></span>{% endfor %}</td>
