@@ -14,6 +14,14 @@
     "users": 4452660
   },
   {
+    "guid": "easyscreenshot@mozillaonline.com",
+    "testing": [],
+    "bugs": [
+      "1271462"
+    ],
+    "users": 2403045
+  },
+  {
     "guid": "firebug@software.joehewitt.com",
     "testing": [],
     "bugs": [
