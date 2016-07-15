@@ -18,6 +18,17 @@
             <li>e10s is enabled by default in Firefox Nightly, but disabled in Firefox's other release channels: Developer Edition, Beta, and Release. When e10s is enabled, Firefox's tab tool tip is suffixed with "- e10s".</li>
             <li>Confirm that the add-on still works as expected with e10s in the Nightly channel.</li>
         </ol>
+        <h3><a id="report" class="anchor">#</a> Overall reports</a></h3>
+        <table class="table table-striped">
+            {% for mcp, value in mcp_overall.items() %}
+            <tr>
+                <td>{{ mcp }}</td>
+                <td>{{ '{0:,}'.format(value) }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p>Note: [<a href="#footnote-5">5</a>]
+        <h3><a id="list" class="anchor">#</a> Current add-on list</a></h3>
         <table class="table table-striped">
           <thead>
             <tr>
@@ -29,23 +40,25 @@
            </tr>
          </thead>
          <tbody>
-        {% for addon in addons %}
-          <tr>
-            <td><a class="anchor" href="#{{ addon.number }}">#</a> {% if addon.url %}<a id="{{ addon.number }}" href="{{ addon.url }}">{{ addon.name }}</a>{% else %}{{ addon.name }}{% endif %}<div class="addon-guid">{{ addon.guid }} &bull; {{ '{0:,}'.format(addon.users) }} users</div></td>
-            <td class="label-wrapper"><span class="label label-{% if addon.status in ['compatible', 'compatible-webextension'] %}success{% elif addon.status == 'error' %}warning{% else %}info{% endif %}">{{ addon.status }}</span></td>
-            <td class="label-wrapper"><span class="label label-{% if addon.shim %}warning{% elif addon.shim == False %}danger{% else %}info{% endif %}">{% if addon.shim %}Yes{% elif addon.shim == False %}No{% else %}Unknown{% endif %}</span></td>
-            <td class="label-wrapper"><span class="label label-{% if addon.cpow %}warning{% else %}success{% endif %}">{{ '{0:,}'.format(addon.cpow) }}</span></td>
-            <td class="label-wrapper">{% for bug in addon.bugs %}<span class="label label-{% if bug.state == 'RESOLVED' %}success{% elif bug.state == 'REOPENED' %}warning{% elif bug.state == 'NEW' %}danger{% endif %}"><a href="{{ bug.url }}" title="Bug: {{ bug.state }}">{{ bug.id }}</a></span>{% endfor %}</td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    <ol>
-        <li><a id="footnote-1"></a>This is checking multi-process compat. flag in the add-on as listed on AMO. Error means its not listed on AMO.</li>
-        <li><a id="footnote-2"></a>This is shim data returned to telemetry (see <a href="https://github.com/andymckay/new-arewee10syet.com">the python notebook</a>).</li>
-        <li><a id="footnote-3"></a>This is CPOW data returned to telemetry (see <a href="https://github.com/andymckay/new-arewee10syet.com">the python notebook</a>).</li>
-        <li><a id="footnote-4"></a>This is a manual list of bugs assigned to this addon in Bugzilla. Maintained in <a href="https://github.com/andymckay/new-arewee10syet.com">data.json</a>.</li>
-    </ol>
-  </div>
+            {% for addon in addons %}
+              <tr>
+                <td><a class="anchor" href="#{{ addon.number }}">#</a> {% if addon.url %}<a id="{{ addon.number }}" href="{{ addon.url }}">{{ addon.name }}</a>{% else %}{{ addon.name }}{% endif %}<div class="addon-guid">{{ addon.guid }} &bull; {{ '{0:,}'.format(addon.users) }} users</div></td>
+                <td class="label-wrapper"><span class="label label-{% if addon.status in ['compatible', 'compatible-webextension'] %}success{% elif addon.status == 'error' %}warning{% else %}info{% endif %}">{{ addon.status }}</span></td>
+                <td class="label-wrapper"><span class="label label-{% if addon.shim %}warning{% elif addon.shim == False %}danger{% else %}info{% endif %}">{% if addon.shim %}Yes{% elif addon.shim == False %}No{% else %}Unknown{% endif %}</span></td>
+                <td class="label-wrapper"><span class="label label-{% if addon.cpow %}warning{% else %}success{% endif %}">{{ '{0:,}'.format(addon.cpow) }}</span></td>
+                <td class="label-wrapper">{% for bug in addon.bugs %}<span class="label label-{% if bug.state == 'RESOLVED' %}success{% elif bug.state == 'REOPENED' %}warning{% elif bug.state == 'NEW' %}danger{% endif %}"><a href="{{ bug.url }}" title="Bug: {{ bug.state }}">{{ bug.id }}</a></span>{% endfor %}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <h3><a id="footnotes" class="anchor">#</a> Footnotes</a></h3>
+        <ol>
+            <li><a id="footnote-1"></a>This is checking multi-process compat. flag in the add-on as listed on AMO. Error means its not listed on AMO.</li>
+            <li><a id="footnote-2"></a>This is shim data returned to telemetry (see <a href="https://github.com/andymckay/new-arewee10syet.com">the python notebook</a>).</li>
+            <li><a id="footnote-3"></a>This is CPOW data returned to telemetry (see <a href="https://github.com/andymckay/new-arewee10syet.com">the python notebook</a>).</li>
+            <li><a id="footnote-4"></a>This is a manual list of bugs assigned to this addon in Bugzilla. Maintained in <a href="https://github.com/andymckay/new-arewee10syet.com">data.json</a>.</li>
+            <li><a id="footnote-5"></a>These are listed add-ons.</li>
+        </ol>
+      </div>
   </body>
 </html>

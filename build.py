@@ -12,6 +12,7 @@ amo_server = os.getenv('AMO_SERVER', 'https://addons.mozilla.org')
 bugzilla_server = os.getenv('BUGZILLA_SERVER', 'https://bugzilla.mozilla.org')
 
 addons = json.load(open('data.json', 'r'))
+mcp_overall = json.load(open('mcp-overall.json', 'r'))
 
 tm_root = 'https://s3-us-west-2.amazonaws.com/telemetry-public-analysis'
 addon_perf = [
@@ -162,11 +163,12 @@ def build():
     template = env.get_template('template.html')
 
     addons = fetch_all()
-    sorted_addons = sorted([[v['users'], v] for v in addons.values()])
+    sorted_addons = sorted([[v.get('users', 0), v] for v in addons.values()])
     sorted_addons = reversed([v for _, v in sorted_addons])
 
     data = {
-        'addons': sorted_addons
+        'addons': sorted_addons,
+        'mcp_overall': mcp_overall
     }
     output = template.render(data)
     open('index.html', 'w').write(output.encode('utf-8'))
