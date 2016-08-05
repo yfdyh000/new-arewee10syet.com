@@ -8,7 +8,7 @@ A generator for arewee10syet.com. Uses data from a couple of sources:
 
 To create your own personal list with your Firefox's addons:
   * get jq, python2, python-requests, python-jinja2
-  $ cat ~/.mozilla/firefox/*.default/addons.json|jq '.addons | sort_by(.dailyUsers) | reverse | .[] |= {users: .dailyUsers, name: .name, guid: .id,bugs: [],testing: []}'
+  $ cat ~/.mozilla/firefox/*.default/addons.json|jq '.addons | sort_by(.dailyUsers) | reverse | .[] |= {users: .dailyUsers, name: .name, guid: .id,bugs: [],testing: []}' >data.json
     * maybe adapt path
   $ mkdir cache
   $ python2 build.py
