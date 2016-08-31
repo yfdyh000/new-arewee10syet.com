@@ -45,8 +45,12 @@ def get_cache(url):
 
 
 def process_amo(result, compat):
+    try:
+        name = result['name']['en-US']
+    except KeyError:
+        name = result['slug']
     return {
-        'name': result['name']['en-US'],
+        'name': name,
         'url': result['url'],
         'guid': result['guid'],
         # This doesn't exist yet.
@@ -67,9 +71,10 @@ def amo(guid):
     for url in (addon_url, compat_url):
         print 'Fetching', url
         res = requests.get(url)
-        if res.status_code == 401:
+        if res.status_code != 200:
             return {
-                'name': fixups.get(guid, 'Error fetching data from AMO'),
+                'name': fixups.get(
+                    guid, '{} error fetching data from AMO'.format(res.status_code)),
                 'url': '',
                 'guid': guid,
                 'status': 'error'
