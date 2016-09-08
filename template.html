@@ -6,19 +6,23 @@
     <link rel="stylesheet" href="index.css">
 </head>
   <body>
-    <div class="container">
-        <div class="callout">
-            <h1>Are we e10s yet?</h1>
-        </div>
+      <div class="callout">
+          <h1>Are we e10s yet?</h1>
+      </div>
+      <div class="container">
         <p><a href="https://wiki.mozilla.org/Electrolysis">E10s</a> runs web related content in background child processes.</p>
-        <p>To test an add-on:</p>
-        <ol>
-            <li>Confirm that the add-on works as expected in Firefox's Release channel <i>before</i> testing Nightly. :)</li>
-            <li><a href="https://nightly.mozilla.org/">Install Firefox Nightly</a>.</li>
-            <li>Install the add-on you would like to test.</li>
-            <li>e10s is enabled by default in Firefox Nightly, but disabled in Firefox's other release channels: Developer Edition, Beta, and Release. When e10s is enabled, Firefox's tab tool tip is suffixed with "- e10s".</li>
-            <li>Confirm that the add-on still works as expected with e10s in the Nightly channel.</li>
-        </ol>
+        <h3>Are you a Firefox user?</h3>
+          <p>Probably the best way to test if your add-ons work with e10s is to use the <a href="https://addons.mozilla.org/en-US/firefox/addon/add-on-compatibility-reporter/">Add-on Compatibility Reporter</a> which will
+          tell you if your add-ons are multi-process compatible and let you tell the developer how well they work. See this <a href="https://blog.mozilla.org/addons/2016/09/07/help-make-add-ons-multiprocess-compatible-with-add-on-compatibility-reporter/">blog post</a> for more.
+          </p>
+        <h3>Are you an add-on developer?</h3>
+          <p>Check out the compatability reports (go to <a href="https://addons.mozilla.org/en-US/developers/addons">AMO developer hub</a> > <code>compatability</code>) for your add-on to see the reports that people have been sending. What follows may be useful, but maybe not.</p>
+        <h3>What is this page?</h3>
+          <p>This page is primarily a report of the add-on status by combining reports from AMO (which are public) and Telemetry (which are not) to produce one list. Just because add-ons are listed
+            or not listed here doesn't mean it gets special treatment. Be warned, it might not make much sense to you.
+        <h3>Here to test an add-on?</h3>
+          <p>Please use the <a href="https://addons.mozilla.org/en-US/firefox/addon/add-on-compatibility-reporter/">Add-on Compatibility Reporter</a> as mentioned above.
+        
         <h3><a id="report" class="anchor">#</a> Overall reports</a></h3>
         <table class="table table-striped">
             {% for mcp, value in mcp_overall.items() %}
@@ -39,6 +43,7 @@
               <th>Shims [<a href="#footnote-2">2</a>]</th>
               <th>CPOW [<a href="#footnote-3">3</a>]</th>
               <th>Bugs [<a href="#footnote-4">4</a>]</th>
+              <th>Featured? [<a href="#footnote-5">5</a>]</th>
            </tr>
          </thead>
          <tbody>
@@ -46,9 +51,10 @@
               <tr>
                 <td><a class="anchor" href="#{{ addon.number }}">#</a> {% if addon.url %}<a id="{{ addon.number }}" href="{{ addon.url }}">{{ addon.name }}</a>{% else %}{{ addon.name }}{% endif %}<div class="addon-guid">{{ addon.guid }} &bull; {{ '{0:,}'.format(addon.users) }} users</div></td>
                 <td class="label-wrapper"><span class="label label-{% if addon.status in ['compatible', 'compatible-webextension'] %}success{% elif addon.status == 'error' %}warning{% else %}info{% endif %}">{{ addon.status }}</span></td>
-                <td class="label-wrapper"><span class="label label-{% if addon.shim %}warning{% elif addon.shim == False %}danger{% else %}info{% endif %}">{% if addon.shim %}Yes{% elif addon.shim == False %}No{% else %}Unknown{% endif %}</span></td>
+                <td class="label-wrapper"><span class="label label-{% if addon.shim %}warning{% elif addon.shim == False %}info{% else %}info{% endif %}">{% if addon.shim %}Yes{% elif addon.shim == False %}No{% else %}Unknown{% endif %}</span></td>
                 <td class="label-wrapper"><span class="label label-{% if addon.cpow %}warning{% else %}success{% endif %}">{{ '{0:,}'.format(addon.cpow) }}</span></td>
                 <td class="label-wrapper">{% for bug in addon.bugs %}<span class="label label-{% if bug.state == 'RESOLVED' %}success{% elif bug.state == 'REOPENED' %}warning{% elif bug.state == 'NEW' %}danger{% endif %}"><a href="{{ bug.url }}" title="Bug: {{ bug.state }}">{{ bug.id }}</a></span>{% endfor %}</td>
+                <td class="label-wrapper">{% if addon.id in featured %}<span class="label label-success">Yes</span>{% else %}{% endif %}</td>
               </tr>
             {% endfor %}
           </tbody>
@@ -59,6 +65,7 @@
             <li><a id="footnote-2"></a>This is shim data returned to telemetry (see <a href="https://github.com/andymckay/new-arewee10syet.com">the python notebook</a>).</li>
             <li><a id="footnote-3"></a>This is CPOW data returned to telemetry (see <a href="https://github.com/andymckay/new-arewee10syet.com">the python notebook</a>).</li>
             <li><a id="footnote-4"></a>This is a manual list of bugs assigned to this addon in Bugzilla. Maintained in <a href="https://github.com/andymckay/new-arewee10syet.com">data.json</a>.</li>
+            <li><a id="footnote-5"></a>Is this add-on featured, by checking the <a href="http://addons-server.readthedocs.io/en/latest/topics/api/addons.html#featured">API</a></li>
         </ol>
       </div>
   </body>

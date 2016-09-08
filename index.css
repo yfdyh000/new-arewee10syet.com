@@ -18,3 +18,21 @@
 .anchor, .anchor:visited {
     color: lightgrey;
 }
+
+div.callout {
+	font-size: 1.3em;
+ 	padding: 1em 2em 1em 2em;
+	margin-bottom: 2em;
+ 	background-color: #052659;
+	border-bottom: 1px solid grey;
+ 	color: white;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("firasans-light.eot");
+  src: local("Fira Sans Regular"), url("firasans-light.woff") format("woff"), url("firasans-light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+

@@ -54,7 +54,8 @@ def process_amo(result, compat):
         'url': result['url'],
         'guid': result['guid'],
         # This doesn't exist yet.
-        'status': compat['e10s']
+        'status': compat['e10s'],
+        'id': result['id']
     }
 
 
@@ -77,7 +78,8 @@ def amo(guid):
                     guid, '{} error fetching data from AMO'.format(res.status_code)),
                 'url': '',
                 'guid': guid,
-                'status': 'error'
+                'status': 'error',
+                'id': 0
             }
 
         res.raise_for_status()
@@ -143,6 +145,15 @@ def fetch_all():
     return data
 
 
+def featured():
+    # Fast, no need to cache.
+    url = amo_server + '/api/v3/addons/featured/'
+    res = requests.get(url, {'app': 'firefox', 'type': 'extension'})
+    res.raise_for_status()
+    res_json = res.json()
+    return [r['id'] for r in res_json['results']]
+
+
 def fetch_telemetry():
     results = {}
 
@@ -173,6 +184,7 @@ def build():
 
     data = {
         'addons': sorted_addons,
+        'featured': featured(),
         'mcp_overall': mcp_overall
     }
     output = template.render(data)
