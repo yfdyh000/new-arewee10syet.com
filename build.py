@@ -148,7 +148,7 @@ def fetch_all():
 def featured():
     # Fast, no need to cache.
     url = amo_server + '/api/v3/addons/featured/'
-    res = requests.get(url, {'app': 'firefox', 'type': 'extension'})
+    res = requests.get(url, params={'app': 'firefox', 'type': 'extension'})
     res.raise_for_status()
     res_json = res.json()
     return [r['id'] for r in res_json['results']]
