@@ -122,13 +122,14 @@ def fetch_all():
         about.update(amo(addon['guid']))
         about['number'] = k
         about['cpow'] = 0
+        about['cpow_per_user'] = 0
         about['bugs'] = bugzilla(addon['bugs'])
         data[addon['guid']] = about
 
     telemetry = fetch_telemetry()
     for key, values in telemetry.items():
         for value in values:
-            # guid
+            # cpow
             if len(value) == 2:
                 guid = value[0][0]
                 v = int(value[1])
@@ -141,6 +142,11 @@ def fetch_all():
 
             if guid in data:
                 data[guid][key] = v
+
+                if key == 'cpow':
+                    data[guid]['cpow_per_user'] = (
+                        data[guid]['cpow'] / float(data[guid]['users'])
+                    )
 
     return data
 

@@ -22,7 +22,7 @@
             or not listed here doesn't mean it gets special treatment.
         <h3>Here to test an add-on?</h3>
           <p>Please use the <a href="https://addons.mozilla.org/en-US/firefox/addon/add-on-compatibility-reporter/">Add-on Compatibility Reporter</a> as mentioned above.
-        
+
         <h3><a id="report" class="anchor">#</a> Overall reports</a></h3>
         <table class="table table-striped">
             {% for mcp, value in mcp_overall.items() %}
@@ -52,8 +52,10 @@
                 <td><a class="anchor" href="#{{ addon.number }}">#</a> {% if addon.url %}<a id="{{ addon.number }}" href="{{ addon.url }}">{{ addon.name }}</a>{% else %}{{ addon.name }}{% endif %}<div class="addon-guid">{{ addon.guid }} &bull; {{ '{0:,}'.format(addon.users) }} users</div></td>
                 <td class="label-wrapper"><span class="label label-{% if addon.status in ['compatible', 'compatible-webextension'] %}success{% elif addon.status == 'error' %}warning{% else %}info{% endif %}">{{ addon.status }}</span></td>
                 <td class="label-wrapper"><span class="label label-{% if addon.shim %}warning{% elif addon.shim == False %}info{% else %}info{% endif %}">{% if addon.shim %}Yes{% elif addon.shim == False %}No{% else %}Unknown{% endif %}</span></td>
-                <td class="label-wrapper"><span class="label label-{% if addon.cpow %}warning{% else %}success{% endif %}">{{ '{0:,}'.format(addon.cpow) }}</span></td>
-                <td class="label-wrapper">{% for bug in addon.bugs %}<span class="label label-{% if bug.state == 'RESOLVED' %}success{% elif bug.state == 'REOPENED' %}warning{% elif bug.state == 'NEW' %}danger{% endif %}"><a href="{{ bug.url }}" title="Bug: {{ bug.state }}">{{ bug.id }}</a></span>{% endfor %}</td>
+                <td class="label-wrapper">
+                    <span class="label label-{% if addon.cpow %}warning{% else %}success{% endif %}">{{ '{0:,}'.format(addon.cpow) }} {% if addon.cpow_per_user %}&nbsp;({{ '{0:.2f}'.format(addon.cpow_per_user) }} per user){% endif %}</span>
+                </td>
+                <td class="label-wrapper">{% for bug in addon.bugs %}<span class="label label-{% if bug.state == 'RESOLVED' %}success{% elif bug.state == 'REOPENED' %}warning{% elif bug.state == 'NEW' %}danger{% endif %}"><a href="{{ bug.url }}" title="Bug: {{ bug.state }}">{{ bug.id }}</a></span>&nbsp;{% endfor %}</td>
                 <td class="label-wrapper">{% if addon.id in featured %}<span class="label label-success">Yes</span>{% else %}{% endif %}</td>
               </tr>
             {% endfor %}
