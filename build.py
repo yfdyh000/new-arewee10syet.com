@@ -121,32 +121,32 @@ def fetch_all():
         about = addon
         about.update(amo(addon['guid']))
         about['number'] = k
-        about['cpow'] = 0
-        about['cpow_per_user'] = 0
+        about['shim'] = {}
+        about['cpow'] = {}
         about['bugs'] = bugzilla(addon['bugs'])
         data[addon['guid']] = about
 
     telemetry = fetch_telemetry()
     for key, values in telemetry.items():
         for value in values:
-            # cpow
+            # cpow     
             if len(value) == 2:
                 guid = value[0][0]
+                version = value[0][1]
                 v = int(value[1])
             # shim
             elif len(value) == 3:
-                guid = value[1][0]
-                v = value[2]
+                try:
+                    guid = value[1][0]
+                    version = value[1][1]
+                    v = value[2]
+                except IndexError:
+                    print 'Skipping bad {} data'.format(key)
             else:
                 raise ValueError('Unknown telemetry')
 
             if guid in data:
-                data[guid][key] = v
-
-                if key == 'cpow':
-                    data[guid]['cpow_per_user'] = (
-                        data[guid]['cpow'] / float(data[guid]['users'])
-                    )
+                data[guid][key][version] = v
 
     return data
 
