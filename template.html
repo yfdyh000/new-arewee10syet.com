@@ -50,19 +50,30 @@
             {% for addon in addons %}
               <tr>
                 <td><a class="anchor" href="#{{ addon.number }}">#</a> {% if addon.url %}<a id="{{ addon.number }}" href="{{ addon.url }}">{{ addon.name }}</a>{% else %}{{ addon.name }}{% endif %}<div class="addon-guid">{{ addon.guid }} &bull; {{ '{0:,}'.format(addon.users) }} users</div></td>
-                <td class="label-wrapper"><span class="label label-{% if addon.status in ['compatible', 'compatible-webextension'] %}success{% elif addon.status == 'error' %}warning{% else %}info{% endif %}">{{ addon.status }}</span></td>
+                <td class="label-wrapper"><span class="label label-{% if addon.status in ['compatible', 'compatible-webextension'] %}success{% elif addon.status == 'error' %}warning{% else %}info{% endif %}">{{ addon.status }}&nbsp;</span></td>
                 <td class="label-wrapper">
+                  {% if addon.shim %}
                       <table class="table table-bordered"> 
-                       {% for version, shim in addon.cpow.items() %}
+                       <tr>
+                          <th>Version</th>
+                          <th>Used</th>
+                       </tr>
+                       {% for version, shim in addon.shim.items() %}
                         <tr>
                           <td>{{ version }}</td>
                           <td>{% if shim %}Yes{% elif shim == False %}No{% else %}Unknown{% endif %}</td>
                         </tr>
                        {% endfor %}
                     </table>
+                  {% endif %}
                 </td>
                 <td class="label-wrapper">
+                  {% if addon.cpow %}
                     <table class="table table-bordered">
+                      <tr>
+                        <th>Version</th>
+                        <th>Amount</th>
+                      </tr>
                        {% for version, cpow in addon.cpow.items() %}
                         <tr>
                           <td>{{ version }}</td>
@@ -70,6 +81,7 @@
                         </tr>
                        {% endfor %}
                     </table>
+                  {% endif %}
                 </td>
                 <td class="label-wrapper">{% for bug in addon.bugs %}<span class="label label-{% if bug.state == 'RESOLVED' %}success{% elif bug.state == 'REOPENED' %}warning{% elif bug.state == 'NEW' %}danger{% endif %}"><a href="{{ bug.url }}" title="Bug: {{ bug.state }}">{{ bug.id }}</a></span>&nbsp;{% endfor %}</td>
                 <td class="label-wrapper">{% if addon.id in featured %}<span class="label label-success">Yes</span>{% else %}{% endif %}</td>
