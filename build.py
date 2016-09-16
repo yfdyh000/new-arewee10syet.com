@@ -130,12 +130,19 @@ def fetch_all():
     for key, values in telemetry.items():
         for value in values:
             # cpow     
-            if len(value) == 2:
+            #if len(value) == 2:
+            if key == "cpow":
                 guid = value[0][0]
                 version = value[0][1]
-                v = int(value[1])
+                v = {}
+                ## Data is listed in microseconds.
+                ## Convert to (truncated) milliseconds for display purposes.
+                v["time"] = int(value[1]) / 1000
+                ## Show occurrence frequencies for CPOWs.
+                v["freq"] = float(value[2])
             # shim
-            elif len(value) == 3:
+            #elif len(value) == 3:
+            elif key == "shim":
                 try:
                     guid = value[1][0]
                     version = value[1][1]
