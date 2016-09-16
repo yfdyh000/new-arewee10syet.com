@@ -73,12 +73,13 @@
                       <tr>
                         <th>Version</th>
                         <th>Avg blocking CPOW calls per session hour</th>
+                        <th>Avg ms per blocking</th>
                       </tr>
                        {% for version, cpow in addon.cpow.items() %}
                         <tr>
                           <td>{{ version }}</td>
-                          <!--<td>{{ '{0:,}'.format(cpow) }}</td>-->
-                          <td>{{ '{0:,.2f}'.format(cpow) }}</td>
+                          <td>{{ '{0:,.2f}'.format(cpow.freq) }}</td>
+                          <td>{{ '{0:,}'.format(cpow.time) }}</td>
                         </tr>
                        {% endfor %}
                     </table>
