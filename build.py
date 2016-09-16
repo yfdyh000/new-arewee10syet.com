@@ -136,7 +136,9 @@ def fetch_all():
                 version = value[0][1]
                 ## Data is listed in microseconds.
                 ## Convert to (truncated) milliseconds for display purposes.
-                v = int(value[1]) / 1000
+                #v = int(value[1]) / 1000
+                ## Show occurrence frequencies for CPOWs.
+                v = float(value[2])
             # shim
             #elif len(value) == 3:
             elif key == "shim":
