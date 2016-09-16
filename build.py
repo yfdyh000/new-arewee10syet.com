@@ -41,6 +41,7 @@ def set_cache(url, result):
 def get_cache(url):
     filename = os.path.join('cache', url_hash(url) + '.json')
     if os.path.exists(filename):
+        print 'Using cache:', filename
         return json.load(open(filename, 'r'))
 
 
@@ -171,6 +172,7 @@ def fetch_telemetry():
     results = {}
 
     for key, url in addon_perf:
+        print 'Looking up', url
         cached = get_cache(url)
         if cached:
             data = cached
