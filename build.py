@@ -130,8 +130,6 @@ def fetch_all():
     telemetry = fetch_telemetry()
     for key, values in telemetry.items():
         for value in values:
-            # cpow     
-            #if len(value) == 2:
             if key == "cpow":
                 guid = value[0][0]
                 version = value[0][1]
@@ -141,8 +139,6 @@ def fetch_all():
                 v["time"] = int(value[1]) / 1000
                 ## Show occurrence frequencies for CPOWs.
                 v["freq"] = float(value[2])
-            # shim
-            #elif len(value) == 3:
             elif key == "shim":
                 try:
                     guid = value[1][0]
@@ -172,18 +168,10 @@ def fetch_telemetry():
     results = {}
 
     for key, url in addon_perf:
-        print 'Looking up', url
-        cached = get_cache(url)
-        if cached:
-            data = cached
-
-        else:
-            print 'Fetching', url
-            res = requests.get(url)
-            res.raise_for_status()
-            data = res.json()
-            set_cache(url, data)
-
+        print 'Fetching', url
+        res = requests.get(url)
+        res.raise_for_status()
+        data = res.json()
         results[key] = data
 
     return results
