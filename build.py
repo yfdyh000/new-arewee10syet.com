@@ -16,8 +16,8 @@ mcp_overall = json.load(open('mcp-overall.json', 'r'))
 
 tm_root = 'https://s3-us-west-2.amazonaws.com/telemetry-public-analysis-2'
 addon_perf = [
-    ['shim', tm_root + '/e10s-addon-perf/data/shim-data.json'],
-    ['cpow', tm_root + '/e10s-addon-perf/data/cpow-data.json']
+    ['shim', tm_root + '/e10s-addon-perf-2/data/shim-data.json'],
+    ['cpow', tm_root + '/e10s-addon-perf-2/data/cpow-data.json']
 ]
 
 
