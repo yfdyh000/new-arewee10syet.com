@@ -12,7 +12,7 @@ amo_server = os.getenv('AMO_SERVER', 'https://addons.mozilla.org')
 bugzilla_server = os.getenv('BUGZILLA_SERVER', 'https://bugzilla.mozilla.org')
 
 addons = json.load(open('data.json', 'r'))
-mcp_overall = json.load(open('mcp-overall.json', 'r'))
+mcp_overall = json.load(open('mpc-overall.json', 'r'))
 
 tm_root = 'https://s3-us-west-2.amazonaws.com/telemetry-public-analysis-2'
 addon_perf = [
