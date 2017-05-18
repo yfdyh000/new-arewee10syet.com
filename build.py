@@ -124,7 +124,7 @@ def fetch_all():
         about['number'] = k
         about['shim'] = {}
         about['cpow'] = {}
-        about['bugs'] = bugzilla(addon['bugs'])
+        about['bugs'] = bugzilla(addon.get('bugs', []))
         data[addon['guid']] = about
 
     telemetry = fetch_telemetry()
